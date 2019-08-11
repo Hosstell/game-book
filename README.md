@@ -4,6 +4,7 @@ Implementation of the book-game in the social network Vkontakte.
 # Setting
 1) To create a group in Vkontakte
 2) Create access token in group settings
+3) Insert the token in the settings file
 
 
 # Launch
