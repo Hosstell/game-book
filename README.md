@@ -6,7 +6,7 @@ Implementation of the book-game in the social network Vkontakte.
 2) Create access token in group settings
 
 
-# launch
+# Launch
     pip3 install pipenv
     pipenv install
     pipenv shell
