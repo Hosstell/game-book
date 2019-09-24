@@ -1,2 +1,2 @@
 
-group_token = '04949259d5a0d3b84c30c033d8e18cd78faf579cc08fc53df3714a65929ebd08759a4790422b9d28b6795'
+group_token = 'your_vk_group_token'
