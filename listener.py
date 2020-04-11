@@ -36,6 +36,7 @@ class VKListener(Listener, Thread):
                 text = event.text
                 payload = getattr(event, 'payload', None)
                 payload = payload[1:-1] if payload else payload
+                payload = payload or '1'
                 user_id = event.user_id
 
                 data = self.handler(user_id, text, payload)
@@ -47,11 +48,12 @@ class VKListener(Listener, Thread):
         pass
 
     def send_message(self, user_id, data):
-        keyboard = VKKeyboard.create_keyboard(data)
-        self.vk.messages.send(
-            user_id=user_id,
-            keyboard=keyboard,
-            message=data['text'],
-            random_id=str(time.time())
-        )
+        if data:
+            keyboard = VKKeyboard.create_keyboard(data)
+            self.vk.messages.send(
+                user_id=user_id,
+                keyboard=keyboard,
+                message=data['text'],
+                random_id=str(time.time())
+            )
 
