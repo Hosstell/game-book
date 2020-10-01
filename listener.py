@@ -31,6 +31,7 @@ class VKListener(Listener, Thread):
         self.longpoll = VkLongPoll(vk_session)
 
     def run(self):
+        print('It is work!')
         for event in self.longpoll.listen():
             if event.type == VkEventType.MESSAGE_NEW and event.to_me:
                 text = event.text

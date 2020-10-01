@@ -1,14 +1,32 @@
 # Game book
-Implementation of the book-game in the social network Vkontakte.
+Реализация книги-игры через чат-бота группы в ВКонтакте
 
-# Setting
-1) To create a group in Vkontakte
-2) Create access token in group settings
-3) Insert the token in the settings file
+**Книга**: Пещера Времени  
+**Автор**: Эдвард Паккард
 
 
-# Launch
+## Настройка
+### 1. Создать сообщество в ВК
+### 2. Сгенерировать токен доступа к API к Вашему сообществу
+![](./gifs/generate_token.gif)
+### 3. Добавить Ваш токен в файл settings.py
+![](./gifs/adding_token.gif)
+### 4. Поздравляю! Ты все сделал правильно!
+![](./gifs/done.gif)  
+осталось только запустить... 
+
+
+## Запуск
+
     pip3 install pipenv
     pipenv install
     pipenv shell
     python main.py
+
+
+## Геймплей
+### На компьютер
+![](./gifs/process.gif)
+
+### На телефоне
+![](./gifs/mobile_process.gif)

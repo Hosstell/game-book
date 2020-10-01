@@ -5,7 +5,7 @@ from book import Book
 class VKHandler(VKListener):
     def __init__(self):
         super(VKHandler, self).__init__()
-        self.book = Book('./books/russian_book.txt')
+        self.book = Book('./books/book.txt')
 
     def handler(self, user_id, text, payload):
         if payload:
