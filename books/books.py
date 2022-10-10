@@ -3,14 +3,20 @@ import os
 
 
 PESCHERA_VREMENI = "peschera_vremeni"
+PESCHERA_VREMENI_EN = "peschera_vremeni_en"
 TAINA_ZAMKA = "taina_zamka"
+TAINA_ZAMKA_EN = "taina_zamka_en"
 NA_DNO_MORYA = "na_dno_morya"
+NA_DNO_MORYA_EN = "na_dno_morya_en"
 
 
 book_names_map = {
     "PESCHERA_VREMENI": PESCHERA_VREMENI,
+    "PESCHERA_VREMENI_EN": PESCHERA_VREMENI_EN,
     "TAINA_ZAMKA": TAINA_ZAMKA,
-    "NA_DNO_MORYA": NA_DNO_MORYA
+    "TAINA_ZAMKA_EN": TAINA_ZAMKA_EN,
+    "NA_DNO_MORYA": NA_DNO_MORYA,
+    "NA_DNO_MORYA_EN": NA_DNO_MORYA_EN,
 }
 
 
