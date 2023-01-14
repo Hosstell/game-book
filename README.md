@@ -32,6 +32,13 @@ export BOOK_NAME=PESCHERA_VREMENI_EN
 python main.py
 ```
 
+**or using Docker**  
+```shell
+# service_name can be na_dno_morya_en, peschera_vremeni_en, taina_zamka_en, na_dno_morya, peschera_vremeni, taina_zamka
+docker-compose up na_dno_morya_en
+```
+and add **TG_GROUP_TOKEN** variable to .env (see .example.env)
+
 ## Example
 ![Example rus](gifs/example_eng.gif)
 
@@ -68,6 +75,13 @@ export BOOK_NAME=PESCHERA_VREMENI
 
 python main.py
 ```
+
+**или через Docker**
+```shell
+# service_name может принимать значение na_dno_morya_en, peschera_vremeni_en, taina_zamka_en, na_dno_morya, peschera_vremeni, taina_zamka
+docker-compose up na_dno_morya_en
+```
+и добавьте переменную **TG_GROUP_TOKEN** в .env (см. .example.env)
 
 ## Пример работы
 ![Example rus](gifs/example_rus.gif)
