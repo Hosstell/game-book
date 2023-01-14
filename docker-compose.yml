@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+  peschera_vremeni:
+    build: .
+    volumes:
+      - ./src:/gamebook/
+    environment:
+      TG_GROUP_TOKEN: ${TG_GROUP_TOKEN}
+      BOOK_NAME: "PESCHERA_VREMENI"
+
+  peschera_vremeni_en:
+    build: .
+    volumes:
+      - ./src:/gamebook/
+    environment:
+      TG_GROUP_TOKEN: ${TG_GROUP_TOKEN}
+      BOOK_NAME: "PESCHERA_VREMENI_EN"
+
+  taina_zamka:
+    build: .
+    volumes:
+      - ./src:/gamebook/
+    environment:
+      TG_GROUP_TOKEN: ${TG_GROUP_TOKEN}
+      BOOK_NAME: "TAINA_ZAMKA"
+
+  taina_zamka_en:
+    build: .
+    volumes:
+      - ./src:/gamebook/
+    environment:
+      TG_GROUP_TOKEN: ${TG_GROUP_TOKEN}
+      BOOK_NAME: "TAINA_ZAMKA_EN"
+
+  na_dno_morya:
+    build: .
+    volumes:
+      - ./src:/gamebook/
+    environment:
+      TG_GROUP_TOKEN: ${TG_GROUP_TOKEN}
+      BOOK_NAME: "NA_DNO_MORYA"
+
+  na_dno_morya_en:
+    build: .
+    volumes:
+      - ./src:/gamebook/
+    environment:
+      TG_GROUP_TOKEN: ${TG_GROUP_TOKEN}
+      BOOK_NAME: "NA_DNO_MORYA_EN"
+
