@@ -10,4 +10,6 @@ COPY src .
 RUN pip install -r requirements.txt
 
 WORKDIR /gamebook/src
-CMD ["python", "main.py"]
+
+CMD ["sleep", "1000000"]
+#CMD ["python", "/gamebook/src/main.py"]
